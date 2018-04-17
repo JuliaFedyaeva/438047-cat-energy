@@ -30,15 +30,15 @@
       </div>
     </header>
 
-    <main class="catalog-main">
-      <section class="catalog-main__catalog catalog">
+    <main class="catalog">
+      <section class="catalog__products">
         <div class="catalog-wrapper>">
           <h1 class="visually-hidden">Каталог продукции</h1>
           <h2 class="catalog__title">Каталог продукции</h2>
           <article class="catalog__item product">
-            <img class="product__img" src="#" width="100" height="100" alt="Cat Energy PRO 500г"/>
+            <a class="product__img" href="#"><img src="#" width="100" height="100" alt="Cat Energy PRO 500г"/></a>
             <div class="product__wrapper">
-              <h3 class="product__title">Cat Energy PRO 500 г</h3>
+              <a class="product__title" href="#"><h3>Cat Energy PRO 500 г</h3></a>
               <table class="product__about">
                 <tr>
                   <td class="product__desc">Объём</td>
@@ -58,9 +58,9 @@
           </article>
 
           <article class="catalog__item product">
-            <img class="product__img" src="#" width="100" height="100" alt="Cat Energy PRO 1000г"/>
+            <a class="product__img" href="#"><img src="#" width="100" height="100" alt="Cat Energy PRO 1000г"/></a>
             <div class="product__wrapper">
-              <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+              <a class="product__title" href="#"><h3>Cat Energy PRO 1000 г</h3></a>
               <table class="product__about">
                 <tr>
                   <td class="product__desc">Объём</td>
@@ -80,9 +80,9 @@
           </article>
 
           <article class="catalog__item product">
-            <img class="product__img" src="#" width="100" height="100" alt="Cat Energy PRO 500г"/>
+            <a class="product__img" href="#"><img src="#" width="100" height="100" alt="Cat Energy PRO 500г"/></a>
             <div class="product__wrapper">
-              <h3 class="product__title">Cat Energy PRO 500 г</h3>
+              <a class="product__title" href="#"><h3>Cat Energy PRO 500 г</h3></a>
               <table class="product__about">
                 <tr>
                   <td class="product__desc">Объём</td>
@@ -102,9 +102,9 @@
           </article>
 
           <article class="catalog__item product">
-            <img class="product__img" src="#" width="100" height="100" alt="Cat Energy PRO 1000г"/>
+            <a class="product__img" href="#"><img src="#" width="100" height="100" alt="Cat Energy PRO 1000г"/></a>
             <div class="product__wrapper">
-              <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+              <a class="product__title" href="#"><h3>Cat Energy PRO 1000 г</h3></a>
               <table class="product__about">
                 <tr>
                   <td class="product__desc">Объём</td>
@@ -124,9 +124,9 @@
           </article>
 
           <article class="catalog__item product">
-            <img class="product__img" src="#" width="100" height="100" alt="Cat Energy SLIM 500г"/>
+            <a class="product__img" href="#"><img src="#" width="100" height="100" alt="Cat Energy SLIM 500г"/></a>
             <div class="product__wrapper">
-              <h3 class="product__title">Cat Energy SLIM 500 г</h3>
+              <a class="product__title" href="#"><h3>Cat Energy SLIM 500 г</h3></a>
               <table class="product__about">
                 <tr>
                   <td class="product__desc">Объём</td>
@@ -146,9 +146,9 @@
           </article>
 
           <article class="catalog__item product">
-            <img class="product__img" src="#" width="100" height="100" alt="Cat Energy SLIM 1000г"/>
+            <a class="product__img" href="#"><img src="#" width="100" height="100" alt="Cat Energy SLIM 1000г"/></a>
             <div class="product__wrapper">
-              <h3 class="product__title">Cat Energy SLIM 1000 г</h3>
+              <a class="product__title" href="#"><h3>Cat Energy SLIM 1000 г</h3></a>
               <table class="product__about">
                 <tr>
                   <td class="product__desc">Объём</td>
@@ -168,9 +168,9 @@
           </article>
 
           <article class="catalog__item product">
-            <img class="product__img" src="#" width="100" height="100" alt="Cat Energy SLIM 500г"/>
+            <a class="product__img" href="#"><img src="#" width="100" height="100" alt="Cat Energy SLIM 500г"/></a>
             <div class="product__wrapper">
-              <h3 class="product__title">Cat Energy SLIM 500 г</h3>
+              <a class="product__title" href="#"><h3>Cat Energy SLIM 500 г</h3></a>
               <table class="product__about">
                 <tr>
                   <td class="product__desc">Объём</td>
@@ -189,21 +189,21 @@
             <a href="#" class="product__button button">Заказать</a>
           </article>
 
-          <article class="catalog__item product">
-            <h3 class="product__title">Показать еще 100500 товаров</h3>
-            <p class="product__text">На самом деле вкусов гораздо больше!</p>
+          <div class="catalog__item more-products">
+            <a class="more-products__title" href="#"><h3>Показать еще 100500 товаров</h3></a>
+            <p class="more-products__text">На самом деле вкусов гораздо больше!</p>
             <a href="#" class="product__button button">Показать все</a>
-          </article>
+          </div>
         </div>
       </section>
 
-      <section class="catalog-main__other-products other-products">
+      <section class="catalog__other-products other-products">
         <div class="other-products__wrapper">
           <h1 class="visually-hidden">Дополнительные товары</h1>
           <h2 class="other-products__title">Дополнительные товары</h2>
           <ul class="other-products__list">
             <li class="other-products__item goods">
-              <h3 class="goods__title">Сахарозаменитель</h3>
+              <a class="goods__title" href="#"><h3>Сахарозаменитель</h3></a>
               <table class="goods__about">
                 <tr>
                   <td class="goods__volume">1 упаковка</td>
@@ -213,7 +213,7 @@
               <button class="goods__button button" type="button">Заказать</button>
             </li>
             <li class="other-products__item goods">
-                <h3 class="goods__title">Питьевая вода</h3>
+              <a class="goods__title" href="#"><h3>Питьевая вода</h3></a>
               <table class="goods__about">
                 <tr>
                   <td class="goods__volume">5 литров</td>
@@ -223,7 +223,7 @@
               <button class="goods__button button" type="button">Заказать</button>
             </li>
             <li class="other-products__item goods">
-                <h3 class="goods__title">Молоко</h3>
+              <a class="goods__title" href="#"><h3>Молоко</h3></a>
               <table class="goods__about">
                 <tr>
                   <td class="goods__volume">1 литр</td>
@@ -233,7 +233,7 @@
               <button class="goods__button button" type="button">Заказать</button>
             </li>
             <li class="other-products__item goods">
-                <h3 class="goods__title">Витамины</h3>
+              <a class="goods__title" href="#"><h3>Витамины</h3></a>
               <table class="goods__about">
                 <tr>
                   <td class="goods__volume">1 упаковка (30 г)</td>
@@ -249,7 +249,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="catalog__contacts contacts">
         <div class="contacts__wrapper">
           <h1 class="visually-hidden">Как нас найти</h1>
           <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
