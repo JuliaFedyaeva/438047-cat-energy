@@ -1,0 +1,40 @@
+.promo__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 480px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: url("../img/index-can-mobile@1x.png") no-repeat center 85%;
+}
+
+.promo {
+  width: 320px;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-bottom: 20px;
+  color: $white;
+  background: $white url("../img/index-background-mobile@1x.jpg") no-repeat;
+}
+
+.promo__button {
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+.promo__title {
+  font-weight: 400;
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}

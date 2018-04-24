@@ -1,0 +1,60 @@
+.example {
+  color: $black;
+  background-color: $grey-light;
+}
+
+.example__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.example__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 40px;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 30px;
+  padding-right: 10px;
+}
+
+.example__stats-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example__stats {
+  margin-bottom: 25px;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.example__cost {
+  flex-basis: 100%;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.example__progress {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.example__text-stat {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+}
