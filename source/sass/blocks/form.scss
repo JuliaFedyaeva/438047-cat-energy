@@ -5,13 +5,13 @@
   margin-bottom: 25px;
 }
 
-label,
-input,
-textarea {
+.form__label,
+.form__input,
+.form__textarea {
   text-transform: uppercase;
 }
 
-textarea {
+.form__textarea {
   resize: vertical;
   width: 100%;
   padding: 10px;
@@ -26,11 +26,11 @@ textarea {
   justify-content: space-between;
 }
 
-label {
+.form__label {
   margin-right: 10px;
 }
 
-input {
+.form__input {
   flex-grow: 1;
   padding: 10px;
   border: 1px solid $grey-light;
@@ -71,4 +71,8 @@ input {
 .form__section legend {
   font-size: 24px;
   padding-bottom: 35px;
+}
+
+.form__section-data {
+  @include list-style;
 }

@@ -1,7 +1,8 @@
 .main-nav {
   position: relative;
   font-size: 20px;
-  font-family: $font-medium;
+  font-family: $font-regular;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -10,4 +11,8 @@
   position: absolute;
   top: -50px;
   right: 20px;
+}
+
+.main-nav__list {
+  @include list-style;
 }

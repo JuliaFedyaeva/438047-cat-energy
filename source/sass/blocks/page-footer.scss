@@ -17,3 +17,7 @@
 .page-footer__logo {
   margin-bottom: 30px;
 }
+
+.page-footer__socials {
+  @include list-style;
+}

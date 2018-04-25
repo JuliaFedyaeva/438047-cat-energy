@@ -9,11 +9,15 @@
 }
 
 .instruction__title {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 46px;
   margin-top: 40px;
+}
+
+.instruction__items {
+  @include list-style;
 }
 
 .instruction-list__item {
