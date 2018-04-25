@@ -1,0 +1,18 @@
+.copyright {
+  width: 100%;
+  display: flex;
+}
+
+.copyright__link {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $dark-grey;
+}
+
+.copyright__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}

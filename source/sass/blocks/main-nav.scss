@@ -1,0 +1,18 @@
+.main-nav {
+  position: relative;
+  font-size: 20px;
+  font-family: $font-regular;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.main-nav__toggle {
+  font-size: 10px;
+  position: absolute;
+  top: -50px;
+  right: 20px;
+}
+
+.main-nav__list {
+  @include list-style;
+}
