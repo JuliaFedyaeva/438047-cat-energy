@@ -15,4 +15,16 @@
 
 .main-nav__list {
   @include list-style;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 18px;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
 }

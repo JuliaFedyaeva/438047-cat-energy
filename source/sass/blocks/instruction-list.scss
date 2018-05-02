@@ -1,0 +1,51 @@
+@media (min-width: $tablet-width) {
+  .instruction-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .instruction-list__item {
+    flex-basis: 50%;
+    position: relative;
+    padding: 0;
+    counter-increment: levels-counter;
+
+    padding-right: 90px;
+    padding-bottom: 60px;
+
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 150px;
+
+    &::after {
+      content: counter(levels-counter);
+      position: absolute;
+      z-index: -1;
+      top: 125px;
+      left: 120px;
+      font-family: $font-regular;
+      font-weight: 400;
+      font-size: 281px;
+      color: $grey-light;
+    }
+
+    &:nth-of-type(2n) {
+      padding-left: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .instruction__title {
+    flex-direction: row;
+  }
+
+  .instruction-list {
+    justify-content: space-between;
+  }
+
+  .instruction-list__item {
+    flex-basis: 20%;
+    padding-right: 0;
+  }
+}

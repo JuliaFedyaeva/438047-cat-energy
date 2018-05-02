@@ -27,3 +27,24 @@
   margin-bottom: 35px;
   padding-left: 80px;
 }
+
+@media (min-width: $tablet-width) {
+  .instruction {
+    margin-bottom: 30px;
+  }
+
+  .instruction__wrapper {
+    @include container;
+    min-height: 750px;
+  }
+
+  .instruction__title {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .instruction__wrapper {
+    min-height: 380px;
+  }
+}

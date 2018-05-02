@@ -7,3 +7,39 @@
 .programs {
   margin-bottom: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .programs {
+    margin-top: 160px;
+    padding: 0;
+  }
+
+  .programs__wrapper {
+    @include container;
+    min-height: 772px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 500px;
+  }
+
+  .programs {
+    margin-top: 77px;
+  }
+
+  .programs__weight {
+    flex-basis: 46%;
+    padding: 0 50px;
+  }
+
+  .programs__weight:nth-of-type(2n) {
+    margin-left: 80px;
+  }
+}

@@ -42,11 +42,24 @@
   border-bottom: 1px solid $grey-light;
 }
 
-.form__section-aim .form__section-data {
+.form__section-item-aim {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
+.form__section-item-else {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.form__section-data {
+  display: flex;
+  flex-direction: column;
+
+  @include list-style;
+}
 
 .form__section-item {
   margin-bottom: 30px;
@@ -73,6 +86,74 @@
   padding-bottom: 35px;
 }
 
-.form__section-data {
-  @include list-style;
+.form-page .contacts {
+  background: $grey-light;
+}
+
+@media (min-width: $tablet-width) {
+  .form__section-aim {
+    border: 1px solid $grey-light;
+  }
+
+  .form__section-data-else {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__section-item-else {
+    width: 50%;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-page .contacts,
+  .contacts__wrapper {
+    background: $grey-light;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .choose-program__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .choose-program__title,
+  .choose-program__text,
+  .form__section-owner,
+  .form__section-comment,
+  .form__button-wrapper,
+  .form__section-else {
+    flex-basis: 100%;
+  }
+
+  .choose-program__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__section-params,
+  .form__section-aim {
+    flex-basis: 50%;
+  }
+
+  .form__section-item-else {
+    flex-basis: 20%;
+  }
+
+  .form__section-owner .form__section-data {
+    display: flex;
+  }
+
+  .form__section-item-owner {
+    flex-basis: 50%;
+  }
+
+  .form-page .contacts__wrapper {
+    background: $white;
+  }
 }

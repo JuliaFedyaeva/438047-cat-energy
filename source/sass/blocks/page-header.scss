@@ -3,11 +3,27 @@
 }
 
 .page-header__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
+  @include container;
 }
 
 .page-header__logo {
   margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .page-header__logo {
+    width: 162px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    justify-content: space-between;
+  }
 }

@@ -1,7 +1,5 @@
 .contacts__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
+  @include container;
   padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
@@ -23,4 +21,58 @@
 .contacts__map {
   width: 320px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    min-height: 200px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+  }
+
+  .contacts__slogan {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 35px;
+    line-height: 26px;
+    padding-right: 150px;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    text-align: right;
+    margin-right: 30px;
+    padding-left: 130px;
+    line-height: 30px;
+  }
+
+  .contacts__wrapper--grey {
+    background: $grey-light;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__wrapper {
+    position: absolute;
+    width: 570px;
+    top: 10%;
+    left: 5%;
+  }
+
+  .contacts__slogan {
+    padding-right: 0;
+  }
+
+  .contacts__text {
+    padding-left: 0;
+  }
+
+  .contacts__wrapper--white {
+    background: $white;
+  }
 }
