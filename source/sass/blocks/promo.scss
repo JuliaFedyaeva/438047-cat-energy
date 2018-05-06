@@ -84,11 +84,13 @@
     min-height: 560px;
     background-position: 60% bottom;
     background-size: 30%;
+    padding-top: 73px;
   }
 
   .promo {
     background: $white url("../img/index-background-mobile@1x.jpg") no-repeat right;
     background-size: 50%;
+    margin-top: -73px;
   }
 
   .promo__title {

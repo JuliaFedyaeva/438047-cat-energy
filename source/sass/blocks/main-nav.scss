@@ -13,6 +13,31 @@
   right: 20px;
 }
 
+.main-nav--opened .main-nav__toggle {
+  font-size: 0;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $black;
+    top: 9px;
+    left: 0;
+    width: 23px;
+    height: 2px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
 .main-nav__list {
   @include list-style;
   display: flex;

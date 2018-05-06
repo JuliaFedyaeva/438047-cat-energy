@@ -74,10 +74,11 @@
     font-size: 16px;
     line-height: 30px;
     padding: 0 15px;
+    border-collapse: collapse;
   }
 
   .product__about-item {
-    border: 1px solid $grey-light;
+    border-bottom: 1px solid $grey-darker;
   }
 
   .product__img {

@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -14,7 +16,7 @@
           <img class="logo__img" src="img/logo-mobile.svg"
           width="190" height="22" alt="Логотип картинка кота">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -46,7 +48,7 @@
         <div class="programs__wrapper">
           <h1 class="visually-hidden">Программы питания для котов</h1>
           <article class="programs__weight program program--fit">
-            <h2 class="program__title">Похудение</h2>
+            <h2 class="program__title program__title--fit">Похудение</h2>
             <p class="program__content">
               Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
@@ -55,7 +57,7 @@
             <a class="program__link" href="#">Каталог Slim</a>
           </article>
           <article class="programs__weight program program--fat">
-            <h1 class="program__title">Набор массы</h1>
+            <h1 class="program__title program__title--fat">Набор массы</h1>
             <p class ="program__content">
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые
@@ -141,7 +143,7 @@
           <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="contacts__map">
-          <img src="img/bg-map-mobile@1x.png" width="320" height="364" />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d890.2868183647082!2d30.32253734160184!3d59.938344018840546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1517783202567" width="320" height="360" allowfullscreen></iframe>
         </div>
       </section>
     </main>

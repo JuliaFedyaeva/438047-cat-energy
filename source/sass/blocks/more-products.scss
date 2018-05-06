@@ -16,6 +16,27 @@
 
 .more-products__title h3 {
   font-weight: 400;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -40px;
+    left: 50%;
+
+    width: 30px;
+    height: 2px;
+
+    transform: translateX(-50%);
+
+    background-color: $grey-light;
+  }
+
+  &::after {
+    transform: translateX(-50%) rotate(90deg);
+  }
 }
 
 .more-products__button {

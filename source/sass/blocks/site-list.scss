@@ -37,3 +37,21 @@
     border-bottom: 2px solid $green;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list__item a {
+    color: $white;
+  }
+
+  .site-list__item--active {
+    border-bottom: 2px solid $white;
+  }
+
+  .site-list__item--black a {
+    color: $black;
+  }
+
+  .site-list__item--active-green a {
+    border-bottom: 2px solid $green;
+  }
+}

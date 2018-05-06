@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -13,16 +15,16 @@
           <img class="logo__img" src="img/logo-mobile.svg"
           width="190" height="22" alt="Логотип картинка кота">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--black">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--black">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item site-list__item--active site-list__item--black site-list__item--active-green">
               <a>Подбор программы</a>
             </li>
           </ul>
@@ -63,28 +65,28 @@
               <legend class="visually-hidden">Зачем все эти страдания</legend>
               <ul class="form__section-data">
                 <li class="form__section-item form__section-item-aim">
-                  <label class="form__label" for="fit">Похудение</label>
-                  <input class="form__radio" id="fit" type="radio" name="cats-aim" value="fit">
+                  <input class="form__radio" id="fit" type="radio" name="cats-aim" value="fit" checked>
+                  <label class="form__label form__label--button-style" for="fit">Похудение</label>
                 </li>
                 <li class="form__section-item form__section-item-aim">
-                  <label class="form__label" for="fat">Набор массы</label>
                   <input class="form__radio" id="fat" type="radio" name="cats-aim" value="fat">
+                  <label class="form__label form__label--button-style" for="fat">Набор массы</label>
                 </li>
                 <li class="form__section-item form__section-item-aim">
-                  <label class="form__label" for="advice">Не знаю (нужен ваш совет)</label>
                   <input class="form__radio" id="advice" type="radio" name="cats-aim" value="advice">
+                  <label class="form__label form__label--button-style" for="advice">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="form__section form__section-owner">
-              <legend>Контактные данные (владельца кота)</legend>
+              <legend class="form__fieldset-title">Контактные данные (владельца кота)</legend>
               <ul class="form__section-data">
-                <li class="form__section-item form__section-item-owner">
+                <li class="form__section-item form__section-item-owner form__section-item-owner--email">
                   <label class="form__label" for="email">E-mail:*</label>
                   <input class="form__input" id="email" type="text" name="email" placeholder="kuklachev@gmail.com">
                 </li>
-                <li class="form__section-item form__section-item-owner">
+                <li class="form__section-item form__section-item-owner form__section-item-owner--tel">
                   <label class="form__label" for="tel">Телефон:*</label>
                   <input class="form__input" id="tel" type="text" name="tel" placeholder="8 (960) 900-60-90">
                 </li>
@@ -92,28 +94,28 @@
             </fieldset>
 
             <fieldset class="form__section form__section-comment">
-              <legend>Комментарий</legend>
+              <legend class="form__fieldset-title form__fieldset-title-comment">Комментарий</legend>
               <textarea class="form__textarea" name="comment" rows="10" cols="50" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
 
             <fieldset class="form__section form__section-else">
-              <legend>Дополнительно</legend>
+              <legend class="form__fieldset-title form__fieldset-title-else">Дополнительно</legend>
               <ul class="form__section-data form__section-data-else">
                 <li class="form__section-item form__section-item-else">
-                  <label class="form__label" for="nosugar">Сахарозаменитель</label>
                   <input class="form__checkbox" id="nosugar" type="checkbox" name="nosugar" checked>
+                  <label class="form__label form__label--checkbox" for="nosugar">Сахарозаменитель</label>
                 </li>
                 <li class="form__section-item form__section-item-else">
-                  <label class="form__label" for="water">Питьевая вода</label>
                   <input class="form__checkbox" id="water" type="checkbox" name="water">
+                  <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
                 </li>
                 <li class="form__section-item form__section-item-else">
-                  <label class="form__label" for="milk">Молоко</label>
                   <input class="form__checkbox" id="milk" type="checkbox" name="milk">
+                  <label class="form__label form__label--checkbox" for="milk">Молоко</label>
                 </li>
                 <li class="form__section-item form__section-item-else">
-                  <label class="form__label" for="vita">Витамины</label>
                   <input class="form__checkbox" id="vita" type="checkbox" name="vita">
+                  <label class="form__label form__label--checkbox" for="vita">Витамины</label>
                 </li>
               </ul>
             </fieldset>
@@ -126,13 +128,13 @@
       </section>
 
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper contacts__wrapper--grey">
           <h1 class="visually-hidden">Как нас найти</h1>
           <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="contacts__map">
-          <img src="img/bg-map-mobile@1x.png" width="320" height="364" />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d890.2868183647082!2d30.32253734160184!3d59.938344018840546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1517783202567" width="320" height="360" allowfullscreen></iframe>
         </div>
       </section>
     </main>

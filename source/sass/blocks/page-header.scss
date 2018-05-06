@@ -2,16 +2,15 @@
   margin-top: 15px;
 }
 
-.page-header__wrapper {
-  @include container;
-}
-
 .page-header__logo {
+  margin-left: 60px;
+  margin-right: 50%;
   margin-bottom: 15px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
+    @include container;
     display: flex;
     justify-content: flex-end;
   }
@@ -25,5 +24,10 @@
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
     justify-content: space-between;
+  }
+
+  .page-header {
+    position: relative;
+    z-index: 100;
   }
 }

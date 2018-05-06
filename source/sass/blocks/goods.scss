@@ -1,12 +1,13 @@
 .goods {
   padding-top: 15px;
   padding-bottom: 15px;
-  border-top: 1px solid $grey-darker;
+  border-bottom: 1px solid $grey-darker;
+
+  &:first-child {
+    border-top: 1px solid $grey-darker;
+  }
 }
 
-.goods:last-of-type {
-  border-bottom: 1px solid $grey-darker;
-}
 
 .goods__title {
   margin-bottom: 15px;

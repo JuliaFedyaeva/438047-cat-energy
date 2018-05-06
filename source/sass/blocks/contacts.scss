@@ -19,14 +19,24 @@
 }
 
 .contacts__map {
-  width: 320px;
-  margin: 0 auto;
+  background-image: ("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contacts__map iframe {
+  width: 100%;
+  border: none;
+}
+
+.contacts--grey {
+  background: $grey-light;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    min-height: 200px;
     background-color: $white;
+    min-height: 200px;
     display: flex;
     align-items: center;
   }
@@ -61,7 +71,8 @@
     position: absolute;
     width: 570px;
     top: 10%;
-    left: 5%;
+    left: 50%;
+    margin-left: -610px;
   }
 
   .contacts__slogan {

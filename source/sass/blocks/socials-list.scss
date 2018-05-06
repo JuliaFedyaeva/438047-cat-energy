@@ -1,15 +1,16 @@
 .socials-list {
   width: 280px;
   padding: 21px 0;
-  border-top: 1px solid $grey-light;
-  border-bottom: 1px solid $grey-light;
+  border-top: 1px solid $grey-darker;
+  border-bottom: 1px solid $grey-darker;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .socials-list__item {
-  flex-basis: 30%;
+  flex-basis: 40px;
+  margin: 0 20px;
 }
 
 .social__img {
@@ -21,5 +22,9 @@
   .social__img {
     width: 30px;
     height: 22px;
+  }
+
+  .socials-list {
+    border: none;
   }
 }
