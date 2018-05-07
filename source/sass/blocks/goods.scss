@@ -1,12 +1,13 @@
 .goods {
   padding-top: 15px;
   padding-bottom: 15px;
-  border-top: 1px solid $grey-darker;
+  border-bottom: 1px solid $grey-darker;
+
+  &:first-child {
+    border-top: 1px solid $grey-darker;
+  }
 }
 
-.goods:last-of-type {
-  border-bottom: 1px solid $grey-darker;
-}
 
 .goods__title {
   margin-bottom: 15px;
@@ -31,10 +32,41 @@
 }
 
 .goods__button {
-  padding: 0;
   font: inherit;
-  background: none;
-  border: none;
-  box-shadow: none;
   cursor: pointer;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .goods {
+    border: 1px solid $grey-light;
+    border-collapse: collapse;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .goods__button {
+    flex-basis: 100%;
+  }
+
+  .goods__title h3,
+  .goods__about {
+    font-size: 20px;
+    flex-basis: 50%;
+  }
+
+  .goods__about {
+    text-align: right;
+    align-self: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods__button {
+    flex-basis: 247px;
+    text-align: center;
+    margin: 0;
+    align-self: center;
+  }
 }

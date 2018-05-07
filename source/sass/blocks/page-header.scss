@@ -2,12 +2,32 @@
   margin-top: 15px;
 }
 
-.page-header__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
+.page-header__logo {
+  margin-left: 60px;
+  margin-right: 50%;
+  margin-bottom: 15px;
 }
 
-.page-header__logo {
-  margin-bottom: 15px;
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    @include container;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .page-header__logo {
+    width: 162px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    justify-content: space-between;
+  }
+
+  .page-header {
+    position: relative;
+    z-index: 100;
+  }
 }

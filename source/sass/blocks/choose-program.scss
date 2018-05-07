@@ -4,9 +4,7 @@
 }
 
 .choose-program__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
+  @include container;
 }
 
 .choose-program__title {

@@ -1,12 +1,9 @@
 .page-footer__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
+  @include container;
   padding-top: 40px;
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -20,4 +17,29 @@
 
 .page-footer__socials {
   @include list-style;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    @include container;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 142px;
+  }
+
+  .page-footer__logo,
+  .page-footer__socials,
+  .page-footer__copyright {
+    width: 33%;
+  }
+
+  .page-footer__copyright {
+    padding-left: 60px;
+  }
+
+  .page-footer__socials {
+    margin-left: 90px;
+    margin-right: 30px;
+  }
 }

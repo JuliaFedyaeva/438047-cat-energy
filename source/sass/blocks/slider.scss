@@ -1,12 +1,131 @@
+.slider {
+  min-height: 275px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider__image {
+  width: 280px;
+  height: 230px;
+}
+
+.slider__image--hidden {
+  display: none;
+}
+
 .slider__toggle {
   text-transform: uppercase;
+  border: none;
+  background-color: inherit;
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .slider__decor {
+  position: relative;
   margin: 0 10px;
   width: 84px;
   height: 14px;
   background-color: $white;
   border: 1px solid #cdcdcd;
   border-radius: 10px;
+}
+
+.slider__nav {
+  position: absolute;
+  top: 50%;
+  width: 35px;
+  height: 6px;
+  background-color: $green;
+  border-radius: 5px;
+  transform: translateY(-50%);
+}
+
+
+@media (min-width: $tablet-width) {
+  .slider {
+    padding-bottom: 75px;
+    background-size: 100% 384px;
+    background-position: center bottom;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+  }
+
+  .slider__image {
+    height: 517px;
+    display: block;
+    margin: 0 auto;
+    max-width: none;
+    width: 681px;
+  }
+
+  .slider__toggles {
+    margin-top: 31px;
+  }
+
+  .slider__toggle {
+    font-size: 20px;
+    line-height: 20px;
+    font-family: $font-regular;
+    padding: 0;
+  }
+
+  .slider__decor {
+    margin: 0 14px;
+    width: 435px;
+    height: 6px;
+    background-color: $grey-darker;
+    border-radius: 3px;
+    border: none;
+  }
+
+  .slider__nav {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background-color: $white;
+    border: 1px solid $grey-darker;
+    border-radius: 34px;
+    cursor: pointer;
+    left: 45%;
+
+    &:active {
+      border: 2px solid $green;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 8px;
+      height: 8px;
+      border-radius: 5px;
+      background-color: $green;
+
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  .slider__image-wrapper {
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .slider__image--fat {
+    display: flex-none;
+  }
+
+  .slider__image--fit {
+    transform: translateX(-50%);
+    display: flex-none;
+  }
 }
