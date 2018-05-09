@@ -3,9 +3,15 @@
 }
 
 .page-header__logo {
-  margin-left: 60px;
-  margin-right: 50%;
-  margin-bottom: 15px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-header__logo img {
+  width: 240px;
+  padding-right: 40px;
+  height: 40px;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,7 +22,7 @@
   }
 
   .page-header__logo {
-    width: 162px;
+    width: 320px;
     margin: 0;
   }
 }

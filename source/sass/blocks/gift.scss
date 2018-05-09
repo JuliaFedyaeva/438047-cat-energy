@@ -5,6 +5,12 @@
   color: $white;
   background: $green url("../img/gift-photo-mobile@1x.jpg");
   position: relative;
+  background-size: cover;
+
+  @media (max-width: $mobile-width-only) and (min-resolution: $retina-dpi),
+    (max-width: $mobile-width-only) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .gift__title {
@@ -31,6 +37,11 @@
 @media (min-width: $tablet-width) {
   .gift {
     min-height: 201px;
+    background: $green url("../img/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .gift__title {
@@ -44,7 +55,13 @@
 @media (min-width: $desktop-width) {
   .gift {
     width: 246px;
+    height: 289px;
     margin-bottom: 40px;
+    background: $green url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .gift__title {
