@@ -16,8 +16,8 @@
   .main-nav__toggle {
     font-size: 10px;
     position: absolute;
-    top: -50px;
-    right: 25px;
+    top: -43px;
+    right: 30px;
   }
 
   .main-nav--opened .main-nav__toggle {
@@ -51,14 +51,16 @@
     font-size: 0;
     width: 25px;
     height: 25px;
-    top: -30px;
+    top: -45px;
+    right: 20px;
+    border: none;
 
     &::before {
       content: "";
       position: absolute;
       width: 25px;
       height: 2px;
-      top: 0;
+      top: 2px;
       left: 0;
       background-color: $black;
       box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
@@ -66,6 +68,10 @@
   }
 
   .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--closed .site-list {
     display: none;
   }
 }

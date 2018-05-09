@@ -2,11 +2,16 @@
   min-height: 275px;
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
+}
+
+.slider__image-wrapper {
+  width: 320px;
 }
 
 .slider__image {
-  width: 280px;
-  height: 230px;
+  width: 100%;
+  height: auto;
 }
 
 .slider__image--hidden {
@@ -23,13 +28,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 32px;
 }
 
 .slider__decor {
   position: relative;
   margin: 0 10px;
-  width: 84px;
+  width: 83px;
   height: 14px;
   background-color: $white;
   border: 1px solid #cdcdcd;
@@ -39,7 +44,8 @@
 .slider__nav {
   position: absolute;
   top: 50%;
-  width: 35px;
+  left: 3px;
+  width: 50%;
   height: 6px;
   background-color: $green;
   border-radius: 5px;

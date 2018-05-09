@@ -3,17 +3,15 @@
 }
 
 .instruction__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
+  @include container;
 }
 
 .instruction__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin-bottom: 46px;
-  margin-top: 40px;
+  margin-bottom: 43px;
+  margin-top: 28px;
 }
 
 .instruction__items {
@@ -24,14 +22,14 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
   padding-left: 80px;
   position: relative;
 
   &::before {
     position: absolute;
     content: "";
-    top: 0;
+    top: -3px;
     left: 0;
     width: 60px;
     height: 60px;
