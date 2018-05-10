@@ -95,7 +95,7 @@
   .example__text {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
 
   .example__stats-wrapper {
@@ -103,23 +103,26 @@
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 50px;
+    flex-wrap: nowrap;
   }
 
   .example__stats {
-    flex-basis: 162px;
+    flex-basis: 165px;
     margin-bottom: 0;
+    align-self: baseline;
 
     &:first-of-type {
-      margin-right: 42px;
+      margin-right: 35px;
     }
   }
 
   .example__price {
-    margin-left: auto;
-    flex-basis: 192px;
+    width: 180px;
+    height: auto;
     text-align: right;
-    margin-top: -40px;
+    margin-top: -10px;
     line-height: 30px;
+    margin-right: 0;
   }
 
   .example__progress {
@@ -131,6 +134,8 @@
   .example__text-stat {
     font-size: 14px;
     background-color: $white;
+    width: 130px;
+    padding-top: 12px;
   }
 
   .example__cost {

@@ -55,12 +55,18 @@
 
 @media (min-width: $tablet-width) {
   .slider {
+    margin-top: 70px;
     padding-bottom: 75px;
     background-size: 100% 384px;
     background-position: center bottom;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 20px;
+  }
+
+  .slider__image-wrapper--fat {
+    margin: 0;
+    margin-top: 70px;
   }
 
   .slider__image {
@@ -71,8 +77,13 @@
     width: 681px;
   }
 
+  .slider__image--fat {
+    display: flex-none;
+    width: 725px;
+  }
+
   .slider__toggles {
-    margin-top: 31px;
+    margin-top: 21px;
   }
 
   .slider__toggle {
@@ -124,10 +135,6 @@
   .slider__image-wrapper {
     width: 50%;
     overflow: hidden;
-  }
-
-  .slider__image--fat {
-    display: flex-none;
   }
 
   .slider__image--fit {

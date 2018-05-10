@@ -17,6 +17,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
   .page-header__wrapper {
     @include container;
     display: flex;
@@ -24,8 +29,8 @@
   }
 
   .page-header__logo {
-    width: 320px;
-    margin: 0;
+    width: 360px;
+    padding: 0;
   }
 }
 

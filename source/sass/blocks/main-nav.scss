@@ -70,19 +70,16 @@
   .main-nav--closed .site-list__item {
     display: none;
   }
-
-  .main-nav--closed .site-list {
-    display: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
-    flex-direction: row;
+    width: 450px;
     font-weight: 400;
     font-size: 18px;
-    justify-content: flex-end;
     align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .main-nav--opened .main-nav__toggle,

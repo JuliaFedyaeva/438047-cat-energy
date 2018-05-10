@@ -21,7 +21,6 @@
   margin: auto;
   margin-bottom: 0;
   padding: 10px;
-  font-size: 14px;
 }
 
 .promo__title {
@@ -55,7 +54,7 @@
   .promo__wrapper {
     background-size: 708px auto;
     background-position: center bottom;
-    min-height: 700px;
+    min-height: 850px;
     text-align: left;
     background-image: url("../img/index-can-tablet@1x.jpg");
 
@@ -68,6 +67,7 @@
   .promo {
     width: 100%;
     background-image: none;
+    margin-bottom: 0;
   }
 
   .promo__title {

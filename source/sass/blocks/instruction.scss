@@ -86,7 +86,23 @@
   }
 
   .instruction__title {
+    margin-top: 50px;
     font-size: 60px;
+  }
+
+  .instruction-list__item {
+    margin-bottom: 35px;
+
+    &::before {
+      top: 40px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
+
+    &:nth-child(2n) {
+      left: 30px;
+    }
   }
 }
 
