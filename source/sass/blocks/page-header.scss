@@ -39,7 +39,12 @@
     justify-content: space-between;
   }
 
+  .page-header__logo {
+    margin-left: -35px;
+  }
+
   .page-header {
+    margin-top: 55px;
     position: relative;
     z-index: 100;
   }

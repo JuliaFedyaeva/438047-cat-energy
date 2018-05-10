@@ -26,19 +26,20 @@
   .programs__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 500px;
   }
 
   .programs {
-    margin-top: 77px;
+    margin-top: 0;
   }
 
   .programs__weight {
     flex-basis: 46%;
     padding: 0 50px;
+    min-height: 360px;
   }
 
   .programs__weight:nth-of-type(2n) {
     margin-left: 80px;
+    margin-bottom: 40px;
   }
 }

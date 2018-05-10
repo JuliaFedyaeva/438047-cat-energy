@@ -88,7 +88,7 @@
   .contacts__wrapper {
     position: absolute;
     width: 570px;
-    top: 10%;
+    top: 24%;
     left: 50%;
     margin-left: -610px;
   }
@@ -98,7 +98,10 @@
   }
 
   .contacts__text {
-    padding-left: 0;
+    padding-left: 16px;
+    text-align: left;
+    margin-left: 45px;
+    line-height: 28px;
   }
 
   .contacts__wrapper--white {

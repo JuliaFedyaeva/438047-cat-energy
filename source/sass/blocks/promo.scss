@@ -101,10 +101,10 @@
 
 @media (min-width: $desktop-width) {
   .promo__wrapper {
-    min-height: 560px;
-    background-position: 60% bottom;
-    background-size: 30%;
-    padding-top: 73px;
+    min-height: 700px;
+    background-position: 66% 69%;
+    background-size: 42%;
+    margin-top: 0;
     background-image: url("../img/index-can-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -113,9 +113,11 @@
   }
 
   .promo {
-    background: $white url("../img/index-background-desktop@1x.jpg") no-repeat right;
-    background-size: 50%;
-    margin-top: -73px;
+    background: $white url("../img/index-background-desktop@1x.jpg") no-repeat;
+    background-size: 700px 700px;
+    margin-top: -127px;
+    background-position: 650px top;
+    height: 700px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
@@ -124,10 +126,17 @@
 
   .promo__title {
     margin-right: 600px;
-    margin-top: 100px;
+    margin-top: 221px;
+    margin-left: 80px;
   }
 
   .promo__slogan {
     margin-right: 600px;
+    margin-left: 80px;
+    margin-bottom: 54px;
+  }
+
+  .promo__button {
+    margin-left: 80px;
   }
 }

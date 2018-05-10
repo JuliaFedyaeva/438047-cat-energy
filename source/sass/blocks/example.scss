@@ -149,11 +149,13 @@
   }
 
   .example {
+    padding-top: 18px;
     background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 175px, rgba(255, 255, 255, 0) 175px, rgba(255, 255, 255, 0) 100%), linear-gradient(to left, #eaeaea 0%, #eaeaea calc(50% - 325px), $grey-light calc(50% - 325px), $grey-light 100%);
     background-color: $white;
   }
 
   .example__price {
+    text-align: justify;
     margin-left: 0;
     min-width: 325px;
   }
@@ -161,10 +163,19 @@
   .example__stats-wrapper {
     flex-wrap: wrap;
     margin-bottom: 0;
-    min-height: 204px;
+    min-height: 172px;
   }
 
   .example__text-stat {
     background-color: $grey-light;
+  }
+
+  .example__title {
+    margin-bottom: 155px;
+  }
+
+  .example__text {
+    padding-right: 130px;
+    margin-bottom: 68px;
   }
 }

@@ -142,3 +142,14 @@
     display: flex-none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider {
+    margin-top: -70px;
+    margin-right: -70px;
+  }
+
+  .slider__toggles {
+    margin-top: 40px;
+  }
+}

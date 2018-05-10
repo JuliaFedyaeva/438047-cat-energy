@@ -169,19 +169,27 @@
 @media (min-width: $desktop-width) {
   .program__title {
     text-align: center;
-    padding-top: 60px;
+    padding-top: 55px;
 
     &::before {
-      left: 20px;
-      top: 30px;
-      width: 80px;
-      height: 80px;
+      left: 0;
+      top: 20px;
+      width: 100px;
+      height: 100px;
     }
   }
 
+  .program--fit,
+  .program--fat {
+    margin-top: 75px;
+  }
+
   .program__title--fit {
+    padding-left: 20px;
+    padding-top: 50px;
+
     &::after {
-      left: 30px;
+      left: 0;
       top: 15px;
       width: 90px;
       height: 93px;
@@ -190,12 +198,27 @@
   }
 
   .program__title--fat {
+    padding-left: 65px;
+
     &::after {
-      left: 10px;
-      top: 15px;
-      width: 90px;
-      height: 90px;
-      background-size: 90px 90px;
+      left: -15px;
+      top: 5px;
+      width: 130px;
+      height: 130px;
+      background-size: 130px 130px;
     }
+  }
+
+  .program--fat .program__content {
+    margin-bottom: 0;
+  }
+
+  .program__content {
+    margin: 0;
+    margin-top: 62px;
+  }
+
+  .program__link {
+    margin-top: 10px;
   }
 }
