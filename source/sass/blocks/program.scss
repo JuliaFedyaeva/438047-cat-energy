@@ -1,10 +1,10 @@
 .program {
   margin: auto;
   margin-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 16px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 23px;
+  padding-bottom: 0;
   background-color: $grey-light;
   width: 280px;
 }
@@ -60,6 +60,7 @@
 
 
 .program__content {
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -68,19 +69,24 @@
 }
 
 .program__link {
+  display: block;
+  padding-top: 17px;
   position: relative;
   text-transform: uppercase;
   color: $black;
+  padding-bottom: 19px;
 
   &:active {
     opacity: 0.3;
   }
+}
 
+.program__link--arrow {
   &::after {
     content: "";
     position: absolute;
-    top: 7px;
-    right: -36px;
+    top: 21px;
+    left: 97px;
     width: 24px;
     height: 11px;
     background-image: url("../img/icon-right-arrow-long.svg");
@@ -167,6 +173,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .program {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .program__title {
     text-align: center;
     padding-top: 55px;

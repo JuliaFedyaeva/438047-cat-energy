@@ -12,7 +12,7 @@
 .example__wrapper {
   @include container;
   padding-top: 23px;
-  padding-bottom: 35px;
+  padding-bottom: 32px;
 }
 
 .example__title {
@@ -149,6 +149,7 @@
   }
 
   .example {
+    margin-top: -38px;
     padding-top: 18px;
     background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 175px, rgba(255, 255, 255, 0) 175px, rgba(255, 255, 255, 0) 100%), linear-gradient(to left, #eaeaea 0%, #eaeaea calc(50% - 325px), $grey-light calc(50% - 325px), $grey-light 100%);
     background-color: $white;
@@ -174,8 +175,13 @@
     margin-bottom: 155px;
   }
 
+  .example__text-wrapper {
+    margin-top: 32px;
+  }
+
   .example__text {
-    padding-right: 130px;
+    padding-right: 120px;
     margin-bottom: 68px;
+    margin-top: 160px;
   }
 }

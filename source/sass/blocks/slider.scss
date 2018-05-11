@@ -19,6 +19,9 @@
 }
 
 .slider__toggle {
+  font-family: $font-regular;
+  font-weight: 400;
+  font-size: 16px;
   text-transform: uppercase;
   border: none;
   background-color: inherit;
@@ -28,7 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 32px;
+  margin-top: 29px;
 }
 
 .slider__decor {
@@ -145,11 +148,32 @@
 
 @media (min-width: $desktop-width) {
   .slider {
-    margin-top: -70px;
-    margin-right: -70px;
+    margin-top: -30px;
+    margin-right: -60px;
+  }
+
+  .slider__image-wrapper:first-child {
+    width: 50%;
+    overflow: hidden;
   }
 
   .slider__toggles {
-    margin-top: 40px;
+    margin-top: 35px;
+    margin-left: 50px;
+  }
+
+  .slider__decor {
+    margin: 0 16px;
+    width: 432px;
+    height: 6px;
+    background-color: $grey-darker;
+    border-radius: 3px;
+    border: none;
+  }
+
+  .slider__toggle {
+    margin-top: 2px;
+    border-bottom: 1px dotted $grey-darker;
+    padding-bottom: 5px;
   }
 }
