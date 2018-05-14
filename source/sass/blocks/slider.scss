@@ -58,8 +58,8 @@
 
 @media (min-width: $tablet-width) {
   .slider {
-    margin-top: 70px;
-    padding-bottom: 75px;
+    margin-top: 60px;
+    padding-bottom: 68px;
     background-size: 100% 384px;
     background-position: center bottom;
     flex-direction: row;
@@ -69,7 +69,7 @@
 
   .slider__image-wrapper--fat {
     margin: 0;
-    margin-top: 70px;
+    padding-top: 20px;
   }
 
   .slider__image {
@@ -86,7 +86,8 @@
   }
 
   .slider__toggles {
-    margin-top: 21px;
+    margin-top: 20px;
+    margin-left: 15px;
   }
 
   .slider__toggle {
@@ -94,6 +95,10 @@
     line-height: 20px;
     font-family: $font-regular;
     padding: 0;
+    margin-top: 2px;
+    border-bottom: 1px dotted $grey-darker;
+    padding-bottom: 5px;
+    padding-right: 12px;
   }
 
   .slider__decor {

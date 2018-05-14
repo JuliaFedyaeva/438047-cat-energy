@@ -83,8 +83,9 @@
   }
 
   .example {
+    padding-top: 8px;
     background-color: $white;
-    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 575px, rgba(255, 255, 255, 0) 75px, rgba(255, 255, 255, 0) 100%), linear-gradient(to left, #eaeaea 0%, #eaeaea calc(50% - 10px), $grey-light calc(50% - 10px), $grey-light 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 575px, rgba(255, 255, 255, 0) 75px, rgba(255, 255, 255, 0) 100%), linear-gradient(to left, #eaeaea 0%, #eaeaea calc(50%), $grey-light calc(50%), $grey-light 100%);
   }
 
   .example__title {
@@ -127,15 +128,16 @@
 
   .example__progress {
     font-size: 30px;
-    margin-left: 10px;
+    margin-left: 5px;
     padding: 20px;
+    margin-top: 4px;
   }
 
   .example__text-stat {
     font-size: 14px;
     background-color: $white;
     width: 130px;
-    padding-top: 12px;
+    padding-top: 5px;
   }
 
   .example__cost {

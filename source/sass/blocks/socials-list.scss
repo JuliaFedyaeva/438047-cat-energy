@@ -19,27 +19,37 @@
   height: 20px;
 }
 
+.social__img--vk {
+  max-width: 30px;
+  height: 15px;
+}
+
+.social__img--inst {
+  max-width: 25px;
+  heigth: 24px;
+}
+
+.social__img--fb {
+  max-width: 14px;
+}
+
 @media (min-width: $tablet-width) {
-  .social__img--vk {
-    width: 30px;
-    height: 15px;
-  }
-
-  .social__img--inst {
-    width: 25px;
-    heigth: 24px;
-  }
-
-  .social__img--fb {
-    width: 14px;
-    height: 27px;
-  }
-
   .socials-list {
     justify-content: center;
     border: none;
     width: 200px;
     padding: 0;
-    height: 60px;
+  }
+
+  .social__img--vk {
+    transform: scale(1.4, 1.4);
+  }
+
+  .social__img--inst {
+    transform: scale(1.4, 1.4);
+  }
+
+  .social__img--fb {
+    transform: scale(1.4, 1.4);
   }
 }

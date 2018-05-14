@@ -20,6 +20,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    padding: 55px 0;
+  }
+
   .page-footer__wrapper {
     @include container;
     display: flex;
@@ -33,10 +37,6 @@
   .page-footer__copyright {
     width: 33.333333%;
     margin-bottom: 0;
-  }
-
-  .page-footer__copyright {
-    padding-left: 60px;
   }
 }
 
