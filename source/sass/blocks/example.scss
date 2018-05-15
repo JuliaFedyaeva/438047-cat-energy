@@ -148,19 +148,23 @@
 @media (min-width: $desktop-width) {
   .example__wrapper {
     display: flex;
+    margin-top: 5px;
   }
 
   .example {
-    margin-top: -38px;
+    margin-top: -36px;
     padding-top: 18px;
     background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 175px, rgba(255, 255, 255, 0) 175px, rgba(255, 255, 255, 0) 100%), linear-gradient(to left, #eaeaea 0%, #eaeaea calc(50% - 325px), $grey-light calc(50% - 325px), $grey-light 100%);
     background-color: $white;
   }
 
   .example__price {
-    text-align: justify;
     margin-left: 0;
     min-width: 325px;
+  }
+
+  .example__progress {
+    padding-bottom: 25px;
   }
 
   .example__stats-wrapper {
@@ -169,21 +173,22 @@
     min-height: 172px;
   }
 
+  .example__cost {
+    display: flex;
+    width: 100%;
+  }
+
   .example__text-stat {
     background-color: $grey-light;
   }
 
-  .example__title {
-    margin-bottom: 155px;
-  }
-
   .example__text-wrapper {
-    margin-top: 32px;
+    margin-top: 29px;
   }
 
   .example__text {
     padding-right: 120px;
-    margin-bottom: 68px;
+    margin-bottom: 62px;
     margin-top: 160px;
   }
 }

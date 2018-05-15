@@ -30,6 +30,8 @@
   .programs__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 75px;
+    align-items: flex-start;
   }
 
   .programs {
@@ -44,6 +46,5 @@
 
   .programs__weight:nth-of-type(2n) {
     margin-left: auto;
-    margin-bottom: 40px;
   }
 }

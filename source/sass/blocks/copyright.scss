@@ -32,3 +32,9 @@
     justify-content: space-between;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    justify-content: flex-end;
+  }
+}

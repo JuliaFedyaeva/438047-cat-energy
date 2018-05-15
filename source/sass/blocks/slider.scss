@@ -153,8 +153,16 @@
 
 @media (min-width: $desktop-width) {
   .slider {
-    margin-top: -30px;
+    margin-top: -60px;
     margin-right: -60px;
+  }
+
+  .slider__image {
+    margin-left: -30px;
+  }
+
+  .slider__image--fit {
+    margin-left: -10px;
   }
 
   .slider__image-wrapper:first-child {
@@ -163,8 +171,8 @@
   }
 
   .slider__toggles {
-    margin-top: 35px;
-    margin-left: 50px;
+    margin-top: 40px;
+    margin-left: 20px;
   }
 
   .slider__decor {
