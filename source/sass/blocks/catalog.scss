@@ -22,16 +22,18 @@
   .catalog__wrapper {
     display: flex;
     flex-wrap: wrap;
+    border: none;
   }
 
   .catalog__title {
+    margin-top: 53px;
     font-size: 60px;
     line-height: 60px;
     flex-basis: 100%;
   }
 
   .catalog__item {
-    flex-basis: 45%;
+    width: 321px;
     margin-top: 140px;
   }
 

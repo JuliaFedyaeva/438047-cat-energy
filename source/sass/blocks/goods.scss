@@ -46,11 +46,20 @@
 
 @media (min-width: $tablet-width) {
   .goods {
-    border: 1px solid $grey-light;
     border-collapse: collapse;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .goods__volume,
+  .goods__cost {
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .goods__cost {
+    width: 95px;
   }
 
   .goods__button {
@@ -61,6 +70,10 @@
   .goods__about {
     font-size: 20px;
     flex-basis: 50%;
+  }
+
+  .goods__title h3 {
+    margin-bottom: 10px;
   }
 
   .goods__about {
