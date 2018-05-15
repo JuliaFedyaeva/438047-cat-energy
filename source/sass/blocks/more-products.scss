@@ -4,7 +4,7 @@
 }
 
 .more-products__wrapper {
-  padding-top: 80px;
+  padding-top: 63px;
   padding-bottom: 25px;
   text-align: center;
 }
@@ -15,22 +15,22 @@
 }
 
 .more-products__title h3 {
+  font-size: 16px;
   font-weight: 400;
   position: relative;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 10px;
 
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     top: -40px;
     left: 50%;
-
     width: 30px;
     height: 2px;
-
     transform: translateX(-50%);
-
     background-color: $grey-light;
   }
 
@@ -40,17 +40,21 @@
 }
 
 .more-products__button {
+  font-family: $font-regular;
+  font-weight: 400;
+  font-size: 16px;
   margin: auto;
   color: $black;
   background-color: $grey-light;
+  margin-top: 20px;
+  padding: 10px 0;
 }
 
 .more-products__text {
+  margin: 0;
   font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  margin-bottom: 25px;
-  margin-top: 15px;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 @media (min-width: $tablet-width) {

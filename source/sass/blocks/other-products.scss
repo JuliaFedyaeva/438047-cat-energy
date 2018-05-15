@@ -1,7 +1,7 @@
 .other-products__wrapper {
   @include container;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 8px;
+  padding-bottom: 19px;
 }
 
 .other-products__title {
@@ -14,9 +14,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
-    margin-left: 25px;
-    width: 370px;
+    top: 60%;
+    width: 52px;
+    margin-left: 23px;
     height: 3px;
     background-color: $green;
   }

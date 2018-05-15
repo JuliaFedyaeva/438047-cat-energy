@@ -1,6 +1,7 @@
 .goods {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 8px;
+  padding-bottom: 14px;
+  margin-bottom: 5px;
   border-bottom: 1px solid $grey-darker;
 
   &:first-child {
@@ -15,6 +16,9 @@
 }
 
 .goods__title h3 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 16px;
 }
@@ -23,8 +27,9 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   width: 100%;
+  border-collapse: collapse;
 }
 
 .goods__cost {
@@ -35,7 +40,9 @@
   font: inherit;
   cursor: pointer;
   margin: 0 auto;
+  padding: 10px;
 }
+
 
 @media (min-width: $tablet-width) {
   .goods {
