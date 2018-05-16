@@ -89,4 +89,10 @@
     margin: 0;
     align-self: center;
   }
+
+  .goods__volume,
+  .goods__cost {
+    width: auto;
+    text-align: right;
+  }
 }

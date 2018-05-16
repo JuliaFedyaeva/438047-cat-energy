@@ -132,11 +132,22 @@
     width: 246px;
   }
 
+  .product__title {
+    padding: 0 55px;
+    margin: 0;
+  }
+
   .product {
     width: 246px;
+    margin-bottom: 18px;
+  }
+
+  .product__img-image {
+    margin-top: -36px;
   }
 
   .product__button {
     width: 168px;
+    margin-bottom: 40px;
   }
 }

@@ -1,6 +1,23 @@
 .more-products {
-  border-top: 1px solid $grey-light;
-  border-bottom: 1px solid $grey-light;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 320px;
+    border-top: 1px solid $grey-light;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    width: 320px;
+    border-top: 1px solid $grey-light;
+  }
 }
 
 .more-products__wrapper {
@@ -110,6 +127,14 @@
   .more-products__wrapper,
   .more-products {
     width: 246px;
+  }
+
+  .more-products__title {
+    padding: 0 40px;
+  }
+
+  .more-products__text {
+    padding: 0 30px;
   }
 
   .more-products__button {
