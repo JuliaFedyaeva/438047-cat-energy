@@ -263,16 +263,145 @@
 @media (min-width: $tablet-width) {
   .form__section-aim {
     border: 1px solid $grey-light;
+    padding: 0;
+    padding-left: 85px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form__label--button-style {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -55px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid $grey-light;
+      border-radius: 30px;
+    }
+  }
+
+  .form__radio {
+    &:checked + .form__label--button-style::after {
+      top: 1px;
+      left: -44px;
+      width: 18px;
+      height: 18px;
+      background-color: $green;
+    }
+  }
+
+  .form__section-item-aim {
+    padding-top: 15px;
+  }
+
+  .form__section {
+    font-size: 20px;
+  }
+
+  .form__section-params,
+  .form__section-aim,
+  .form__section-owner,
+  .form__section-else,
+  .form__section-comment {
+    margin-top: 65px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 70px;
+  }
+
+  .form__title-contacts {
+    margin-top: 92px;
+    padding-left: 40px;
+    margin-left: 0;
+    margin-right: 115px;
+    margin-bottom: 80px;
+  }
+
+  .form__textarea {
+    font-size: 20px;
+    padding-left: 18px;
+    height: 175px;
+    margin-bottom: 0;
+  }
+
+  .form__title-comment {
+    margin-top: -15px;
+    margin-left: 0;
+    padding-left: 40px;
+    margin-right: 450px;
+    margin-bottom: 80px;
+  }
+
+  .form__title-else {
+    padding-left: 40px;
+    margin-left: 0;
+    margin-right: 415px;
+  }
+
+  .form__label--checkbox {
+    padding-bottom: 22px;
+
+    &::before {
+      top: -10px;
+      left: -55px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      top: 3px;
+      left: -45px;
+    }
+  }
+
+  .form__section-else {
+    padding-top: 7px;
+    margin-left: 53px;
+    margin-bottom: 13px;
+  }
+
+  .form__button {
+    margin-left: 42px;
+    font-size: 20px;
+  }
+
+  .form__desc {
+    margin-right: auto;
+    margin-left: 62px;
+    font-size: 16px;
+  }
+
+  .form__input {
+    font-size: 20px;
+    padding-left: 25px;
+  }
+
+  .form__section-item {
+    padding-bottom: 8px;
+  }
+
+  .form__title {
+    font-size: 36px;
   }
 
   .form__section-data-else {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .form__section-item-else {
     width: 50%;
+    margin-left: auto;
   }
 
   .form__button-wrapper {
@@ -282,18 +411,6 @@
 
   .form-page .contacts {
     background: $grey-light;
-  }
-
-  .form__title {
-    position: relative;
-  }
-
-  .form__title-comment {
-    position: relative;
-  }
-
-  .form__title-else {
-    position: relative;
   }
 }
 
