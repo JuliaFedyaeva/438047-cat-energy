@@ -52,6 +52,10 @@
 
 
 @media (min-width: $desktop-width) {
+  .catalog__products {
+    margin-bottom: 70px;
+  }
+
   .catalog__title {
     margin-top: 70px;
   }

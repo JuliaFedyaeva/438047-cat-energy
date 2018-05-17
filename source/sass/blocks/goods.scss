@@ -90,9 +90,35 @@
     align-self: center;
   }
 
+  .goods__title {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .goods__title h3 {
+    margin: 0;
+  }
+
   .goods__volume,
   .goods__cost {
     width: auto;
+    text-align: left;
+    padding-top: 7px;
+    line-height: 30px;
+  }
+
+  .goods__volume {
+    width: 245px;
+  }
+
+  .goods__cost {
+    width: 80px;
+    padding-right: 35px;
     text-align: right;
+  }
+
+  .goods__about {
+    margin-bottom: 0;
+    flex-basis: 325px;
   }
 }

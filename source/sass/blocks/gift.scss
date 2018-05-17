@@ -64,6 +64,7 @@
   .gift {
     width: 246px;
     height: 289px;
+    margin-left: auto;
     margin-bottom: 40px;
     background: $green url("../img/gift-photo-desktop@1x.jpg");
 
@@ -74,8 +75,15 @@
 
   .gift__title {
     text-align: center;
-    padding-top: 250px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 75%;
+    padding-right: 40px;
+    padding-left: 35px;
+
+    &::before {
+      top: -120px;
+      left: 97px;
+    }
   }
 }

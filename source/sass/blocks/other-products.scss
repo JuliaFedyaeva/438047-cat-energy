@@ -63,8 +63,8 @@
   .other-products__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     flex-wrap: wrap;
+    align-items: flex-start;
     margin-top: 5px;
     position: relative;
   }
@@ -75,8 +75,10 @@
   }
 
   .other-products__title {
-    margin-left: -30px;
-    padding: 0 30px;
+    margin-left: -40px;
+    padding: 0 39px;
+    padding-right: 36px;
+    margin-bottom: 29px;
     background-color: $white;
   }
 
@@ -87,10 +89,12 @@
   }
 
   .other-products__item {
-    padding-bottom: 0;
+    padding-top: 12px;
+    padding-bottom: 14px;
     padding-left: 0;
     padding-right: 0;
     border-right: none;
     border-left: none;
+    align-items: center;
   }
 }
