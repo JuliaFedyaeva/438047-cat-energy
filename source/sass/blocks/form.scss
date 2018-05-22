@@ -174,6 +174,7 @@
 
 .form--line {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10px, $green 10px, $green 14px, rgba(255, 255, 255, 0) 14px, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
 }
 
 .form__title-comment {
@@ -401,7 +402,6 @@
 
   .form__section-item-else {
     width: 50%;
-    margin-left: auto;
   }
 
   .form__button-wrapper {
@@ -420,8 +420,67 @@
     flex-wrap: wrap;
   }
 
+  .choose-program__title {
+    margin-top: 65px;
+    margin-bottom: 48px;
+  }
+
+  .choose-program__text {
+    align-items: flex-start;
+    flex-basis: 330px;
+    margin-left: 0;
+  }
+
+  .form__wrapper-params {
+    width: 570px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 25px;
+    margin-bottom: 70px;
+  }
+
+  .form__wrapper-aim {
+    width: 570px;
+    padding: 0;
+    margin-right: auto;
+    margin-left: 40px;
+    margin-top: 25px;
+    margin-bottom: 70px;
+  }
+
+  .form__section-params,
+  .form__section-aim,
+  .form__section-owner,
+  .form__section-else,
+  .form__section-comment {
+    margin: 0;
+  }
+
+  .form__section-aim {
+    padding-left: 0;
+  }
+
+  .form__section-item-aim {
+    padding-left: 85px;
+  }
+
+  .form__section-data {
+    width: 485px;
+  }
+
+  .form__section-item-cat {
+    width: 565px;
+  }
+
+  .form__section-owner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 47px;
+  }
+
   .choose-program__title,
-  .choose-program__text,
   .form__section-owner,
   .form__section-comment,
   .form__button-wrapper,
@@ -429,29 +488,58 @@
     flex-basis: 100%;
   }
 
+  .form__section-else {
+    margin-top: 17px;
+  }
+
   .choose-program__form {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .form__section-params,
-  .form__section-aim {
+  .form__button-wrapper {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form__desc {
     flex-basis: 50%;
+    text-align: left;
+  }
+
+  .form__button {
+    margin: 0;
+    flex-basis: 50%;
+    margin-right: 20px;
   }
 
   .form__section-item-else {
     flex-basis: 20%;
   }
 
-  .form__section-owner .form__section-data {
-    display: flex;
+  .form__textarea {
+    margin-top: 32px;
+    margin-bottom: 85px;
   }
 
   .form__section-item-owner {
+    margin: 0;
     flex-basis: 50%;
   }
 
   .form-page .contacts__wrapper {
     background: $white;
+  }
+
+  .form__title {
+    display: inline-block;
+    padding: 0 40px;
+    background-color: $white;
+    line-height: 40px;
+    margin: -20px 0 40px -40px;
+  }
+
+  .form--line {
+    width: 100%;
   }
 }
