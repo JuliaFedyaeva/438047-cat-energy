@@ -184,6 +184,10 @@
     border: none;
   }
 
+  .slider__image-wrapper--fat {
+    overflow: hidden;
+  }
+
   .slider__toggle {
     margin-top: 2px;
     border-bottom: 1px dotted $grey-darker;
