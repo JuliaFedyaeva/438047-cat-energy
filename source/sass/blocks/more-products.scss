@@ -1,10 +1,27 @@
 .more-products {
-  border-top: 1px solid $grey-light;
-  border-bottom: 1px solid $grey-light;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 320px;
+    border-top: 1px solid $grey-light;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    width: 320px;
+    border-top: 1px solid $grey-light;
+  }
 }
 
 .more-products__wrapper {
-  padding-top: 80px;
+  padding-top: 63px;
   padding-bottom: 25px;
   text-align: center;
 }
@@ -15,22 +32,22 @@
 }
 
 .more-products__title h3 {
+  font-size: 16px;
   font-weight: 400;
   position: relative;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 10px;
 
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     top: -40px;
     left: 50%;
-
     width: 30px;
     height: 2px;
-
     transform: translateX(-50%);
-
     background-color: $grey-light;
   }
 
@@ -40,27 +57,47 @@
 }
 
 .more-products__button {
+  font-family: $font-regular;
+  font-weight: 400;
+  font-size: 16px;
   margin: auto;
   color: $black;
   background-color: $grey-light;
+  margin-top: 20px;
+  padding: 10px 0;
 }
 
 .more-products__text {
+  margin: 0;
   font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  margin-bottom: 25px;
-  margin-top: 15px;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 @media (min-width: $tablet-width) {
+  .more-products {
+    margin-top: 125px;
+    border: none;
+  }
+
   .more-products__title h3,
   .more-products__text {
-    font-size: 16px;
+    font-size: 20px;
+    padding-top: 85px;
+  }
+
+
+  .more-products__title h3 {
+    &::before,
+    &::after {
+      top: 8px;
+      left: 50%;
+      width: 55px;
+    }
   }
 
   .more-products__wrapper {
-    min-height: 430px;
+    min-height: 435px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,7 +106,8 @@
 
   .more-products__button {
     margin: 0 auto;
-    margin-top: 80px;
+    width: 250px;
+    margin-bottom: 18px;
   }
 
   .more-products__title {
@@ -78,13 +116,25 @@
 
   .more-products__text {
     padding: 0 70px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: -80px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .more-products__wrapper,
   .more-products {
     width: 246px;
+  }
+
+  .more-products__title {
+    padding: 0 40px;
+  }
+
+  .more-products__text {
+    padding: 0 30px;
   }
 
   .more-products__button {

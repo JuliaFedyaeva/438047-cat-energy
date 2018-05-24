@@ -1,14 +1,29 @@
 .page-header {
+  min-width: 320px;
+  margin: 0 auto;
   margin-top: 15px;
 }
 
 .page-header__logo {
-  margin-left: 60px;
-  margin-right: 50%;
-  margin-bottom: 15px;
+  margin-top: -2px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  height: 53px;
+}
+
+.page-header__logo img {
+  width: 280px;
+  padding-right: 89px;
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+
   .page-header__wrapper {
     @include container;
     display: flex;
@@ -16,8 +31,9 @@
   }
 
   .page-header__logo {
-    width: 162px;
-    margin: 0;
+    width: 360px;
+    padding: 0;
+    margin-top: -1px;
   }
 }
 
@@ -26,7 +42,12 @@
     justify-content: space-between;
   }
 
+  .page-header__logo {
+    margin-left: -35px;
+  }
+
   .page-header {
+    margin-top: 55px;
     position: relative;
     z-index: 100;
   }

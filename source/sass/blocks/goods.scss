@@ -1,6 +1,7 @@
 .goods {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 8px;
+  padding-bottom: 14px;
+  margin-bottom: 5px;
   border-bottom: 1px solid $grey-darker;
 
   &:first-child {
@@ -15,6 +16,9 @@
 }
 
 .goods__title h3 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 16px;
 }
@@ -23,8 +27,9 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   width: 100%;
+  border-collapse: collapse;
 }
 
 .goods__cost {
@@ -35,15 +40,26 @@
   font: inherit;
   cursor: pointer;
   margin: 0 auto;
+  padding: 10px;
 }
+
 
 @media (min-width: $tablet-width) {
   .goods {
-    border: 1px solid $grey-light;
     border-collapse: collapse;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .goods__volume,
+  .goods__cost {
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .goods__cost {
+    width: 95px;
   }
 
   .goods__button {
@@ -54,6 +70,10 @@
   .goods__about {
     font-size: 20px;
     flex-basis: 50%;
+  }
+
+  .goods__title h3 {
+    margin-bottom: 10px;
   }
 
   .goods__about {
@@ -68,5 +88,37 @@
     text-align: center;
     margin: 0;
     align-self: center;
+  }
+
+  .goods__title {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .goods__title h3 {
+    margin: 0;
+  }
+
+  .goods__volume,
+  .goods__cost {
+    width: auto;
+    text-align: left;
+    padding-top: 7px;
+    line-height: 30px;
+  }
+
+  .goods__volume {
+    width: 245px;
+  }
+
+  .goods__cost {
+    width: 80px;
+    padding-right: 35px;
+    text-align: right;
+  }
+
+  .goods__about {
+    margin-bottom: 0;
+    flex-basis: 325px;
   }
 }

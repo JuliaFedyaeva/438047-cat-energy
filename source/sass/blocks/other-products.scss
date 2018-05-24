@@ -1,25 +1,29 @@
 .other-products__wrapper {
   @include container;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 8px;
+  padding-bottom: 19px;
 }
 
 .other-products__title {
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  margin-bottom: 35px;
-  position: relative;
+  background-color: $white;
+  margin-top: -10px;
+  margin-left: -20px;
+  padding: 0 20px;
+  margin-right: auto;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    margin-left: 25px;
-    width: 550px;
-    height: 3px;
-    background-color: $green;
-  }
+.other-products__wrapper--flex {
+  display: flex;
+  padding-bottom: 0;
+  margin-bottom: 8px;
+}
+
+.other-products__title-wrapper--line {
+  margin-top: 33px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 10px, $green 10px, $green 14px, rgba(255, 255, 255, 0) 14px, rgba(255, 255, 255, 0) 100%);
 }
 
 .other-products__list {
@@ -31,22 +35,27 @@
   .other-products__title {
     font-size: 36px;
     line-height: 36px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      margin-left: -195px;
-      width: 200px;
-      height: 3px;
-      background-color: $green;
-    }
+    margin-left: 0;
+    padding-left: 37px;
+    padding-right: 37px;
   }
 
   .other-products__list {
-    border-top: 1px solid $grey-light;
     border-right: 1px solid $grey-light;
     border-left: 1px solid $grey-light;
+    border-collapse: collapse;
+  }
+
+  .other-products__item {
+    padding-top: 19px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+  }
+
+  .other-products__title-wrapper {
+    margin-top: 67px;
+    margin-bottom: 50px;
   }
 }
 
@@ -55,15 +64,22 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-height: 415px;
+    align-items: flex-start;
+    margin-top: 5px;
+    position: relative;
+  }
+
+  .other-products {
+    margin-bottom: 48px;
+    padding-bottom: 0;
   }
 
   .other-products__title {
-    flex-basis: 100%;
-
-    &::after {
-      width: 1000px;
-    }
+    margin-left: -40px;
+    padding: 0 39px;
+    padding-right: 36px;
+    margin-bottom: 29px;
+    background-color: $white;
   }
 
   .other-products__list {
@@ -73,7 +89,12 @@
   }
 
   .other-products__item {
+    padding-top: 12px;
+    padding-bottom: 14px;
+    padding-left: 0;
+    padding-right: 0;
     border-right: none;
     border-left: none;
+    align-items: center;
   }
 }

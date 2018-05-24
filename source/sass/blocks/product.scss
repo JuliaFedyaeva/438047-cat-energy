@@ -1,12 +1,19 @@
 .product {
-  padding: 0 20px;
-  padding-top: 10px;
-  padding-bottom: 25px;
-  border-top: 1px solid $grey-light;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 320px;
+    border-top: 1px solid $grey-light;
+  }
 }
 
 .product__img {
@@ -19,25 +26,31 @@
 
 .product__title {
   width: 100px;
-  margin-bottom: 20px;
   text-transform: uppercase;
   display: flex;
   flew-wrap: wrap;
 }
 
-.product__button {
-  margin-top: 25px;
-}
-
 .product__title h3 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 13px;
   font-size: 16px;
   font-weight: 400;
 }
 
+.product__button {
+  margin-bottom: 24px;
+  padding: 9px 0;
+  font-family: $font-regular;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 .product__about {
   font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 12px;
   width: 100%;
 }
 
@@ -47,11 +60,17 @@
 
 @media (min-width: $tablet-width) {
   .product {
+    margin-top: 126px;
+    margin-bottom: 15px;
     border-top: none;
     min-height: 430px;
     flex-direction: column;
     flex-wrap: nowrap;
     background-color: $grey-light;
+
+    &::before {
+      border: none;
+    }
   }
 
   .product__wrapper {
@@ -62,18 +81,25 @@
   }
 
   .product__title {
-    font-size: 20px;
-    line-height: 26px;
-    padding: 0 100px;
+    padding: 0 90px;
     width: 100%;
     justify-content: center;
     text-align: center;
   }
 
+  .product__title h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
   .product__about {
     font-size: 16px;
     line-height: 30px;
-    padding: 0 15px;
+    width: auto;
+    margin: 0 35px;
     border-collapse: collapse;
   }
 
@@ -82,7 +108,21 @@
   }
 
   .product__img {
-    margin-top: -60px;
+    margin-top: -47px;
+  }
+
+  picture img {
+    width: 100%;
+    height: auto;
+  }
+
+  .product__img-image {
+    margin-top: -40px;
+  }
+
+  .product__button {
+    width: 250px;
+    margin-bottom: 41px;
   }
 }
 
@@ -92,11 +132,22 @@
     width: 246px;
   }
 
+  .product__title {
+    padding: 0 55px;
+    margin: 0;
+  }
+
   .product {
     width: 246px;
+    margin-bottom: 18px;
+  }
+
+  .product__img-image {
+    margin-top: -36px;
   }
 
   .product__button {
     width: 168px;
+    margin-bottom: 40px;
   }
 }

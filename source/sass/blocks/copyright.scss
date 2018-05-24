@@ -4,6 +4,7 @@
 }
 
 .copyright__link {
+  margin-top: 18px;
   flex-basis: 100%;
   display: flex;
   align-items: center;
@@ -15,4 +16,25 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
+  margin-left: 0;
+}
+
+.copyright__logo {
+  margin-right: -6px;
+  margin-left: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    justify-content: flex-end;
+  }
 }

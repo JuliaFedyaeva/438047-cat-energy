@@ -1,6 +1,6 @@
 .choose-program {
-  margin-top: 30px;
-  padding-bottom: 35px;
+  margin-top: 27px;
+  margin-bottom: 30px;
 }
 
 .choose-program__wrapper {
@@ -12,7 +12,7 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .choose-program__text {
@@ -21,4 +21,30 @@
   margin-bottom: 40px;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .choose-program {
+    margin-bottom: 52px;
+  }
+
+  .choose-program__title {
+    font-size: 60px;
+    margin-top: 75px;
+    margin-bottom: 67px;
+  }
+
+  .choose-program__text {
+    font-size: 20px;
+    line-height: 30px;
+    width: auto;
+    margin-right: 45%;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .choose-program {
+    margin-bottom: 72px;
+  }
 }

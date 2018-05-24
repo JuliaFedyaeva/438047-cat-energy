@@ -28,10 +28,6 @@
       font-size: 281px;
       color: $grey-light;
     }
-
-    &:nth-of-type(2n) {
-      padding-left: 30px;
-    }
   }
 }
 
@@ -45,7 +41,7 @@
   }
 
   .instruction-list__item {
-    flex-basis: 20%;
+    flex-basis: 20.1%;
     padding-right: 0;
   }
 }

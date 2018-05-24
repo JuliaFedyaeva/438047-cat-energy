@@ -1,7 +1,7 @@
 .contacts__wrapper {
   @include container;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 11px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -14,18 +14,26 @@
 .contacts__text {
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 22px;
   flex-basis: 50%;
 }
 
 .contacts__map {
-  background-image: ("../img/bg-map-mobile@1x.png");
+  background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
+  height: 360px;
+
+  @media (max-width: $mobile-width-only) and (min-resolution: $retina-dpi),
+    (max-width: $mobile-width-only) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: 100%;
+  }
 }
 
 .contacts__map iframe {
   width: 100%;
+  height: inherit;
   border: none;
 }
 
@@ -44,21 +52,31 @@
   .contacts__slogan {
     font-size: 20px;
     text-align: left;
-    margin-left: 35px;
+    margin-left: 41px;
     line-height: 26px;
-    padding-right: 150px;
+    padding-right: 130px;
   }
 
   .contacts__text {
     font-size: 16px;
     text-align: right;
-    margin-right: 30px;
+    margin-right: 40px;
     padding-left: 130px;
-    line-height: 30px;
+    line-height: 31px;
   }
 
   .contacts__wrapper--grey {
     background: $grey-light;
+  }
+
+  .contacts__map {
+    background-image: url("../img/bg-map-tablet@1x.png");
+    height: 400px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: 100%;
+    }
   }
 }
 
@@ -70,20 +88,32 @@
   .contacts__wrapper {
     position: absolute;
     width: 570px;
-    top: 10%;
+    top: 24%;
     left: 50%;
     margin-left: -610px;
   }
 
   .contacts__slogan {
     padding-right: 0;
+    margin: 36px;
   }
 
   .contacts__text {
-    padding-left: 0;
+    padding-left: 16px;
+    text-align: left;
+    margin-left: 23px;
   }
 
   .contacts__wrapper--white {
     background: $white;
+  }
+
+  .contacts__map {
+    background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+      background-size: 100%;
+    }
   }
 }
